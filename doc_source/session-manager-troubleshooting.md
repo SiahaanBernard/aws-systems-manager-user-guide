@@ -27,6 +27,7 @@ Use the following information to help you troubleshoot problems with Session Man
 **Problem 2**: An instance you want to connect is in the list on the **Start a session** console page, but the page reports that "The instance you selected is not configured to use Session Manager\." 
 + **Solution A**: The instance has been configured for use with the AWS Systems Manager service, but the IAM instance profile attached to the instance might not include permissions for the Session Manager capability\. For information, see [Verify or Create an IAM Instance Profile with Session Manager Permissions](session-manager-getting-started-instance-profile.md)\.
 + **Solution B**: The instance is not running a version of SSM Agent that supports Session Manager\. Update SSM Agent on the instance to version 2\.3\.68\.0 or later\. 
++ **Solution C**: VPC endpoint for Session Manager is not configured correctly. For information, see [Setting Up VPC Endpoints for Systems Manager](sysman-setting-up-vpc.md)\.
 
   Update SSM Agent manually on an instance by following the steps in [Install and Configure SSM Agent on Windows Instances](sysman-install-win.md) or [Manually Install SSM Agent on Amazon EC2 Linux Instances](sysman-manual-agent-install.md), depending on the operating system\. 
 
